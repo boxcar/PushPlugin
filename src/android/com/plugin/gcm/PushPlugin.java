@@ -240,10 +240,14 @@ public class PushPlugin extends CordovaPlugin {
 				{
 					json.put(key, extras.getBoolean("foreground"));
 				}
-				else if (key.equals("coldstart"))
-				{
-					json.put(key, extras.getBoolean("coldstart"));
-				}
+                else if (key.equals("coldstart"))
+                {
+                    json.put(key, extras.getBoolean("coldstart"));
+                }
+                else if (key.equals("notificationclick"))
+                {
+                    json.put(key, extras.getBoolean("notificationclick"));
+                }
 				else
 				{
 					// Maintain backwards compatibility
